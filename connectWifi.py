@@ -1,3 +1,7 @@
-import wifi
+from wifi import Cell, Scheme
 
-print wifi.scan
+networks = Cell.all('wlan0')
+for x in networks:
+	if (getattr(x, "encrypted") == False):
+		print x		
+
