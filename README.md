@@ -12,6 +12,14 @@ Built with a Raspberry pi, two leds, and a wifi dongle
 	- sudo apt-get install pyton-pip
   wifi python package
 	- pip install wifi
+  wireshark
+	- sudo apt-get install wireshark
+  airmon-ng
+  libcap2-bin
+
+Enable root privileges for wireshark dumpcap
+  sudo setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/bin/dumpcap
+
 
 ##Research docs
   Python wifi library https://wifi.readthedocs.org/en/latest/scanning.html#discovering-networks
